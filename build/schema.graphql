@@ -1,0 +1,12 @@
+type MarketItem @entity {
+  id: ID!
+  tokenId: BigInt! # uint256
+  seller: User! # address
+  owner: Bytes! # address
+  price: BigInt! # uint256
+  isListed: Boolean! # bool
+}
+
+type User @entity {
+  id: ID!
+}
